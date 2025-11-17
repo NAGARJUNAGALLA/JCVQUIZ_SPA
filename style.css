@@ -1,0 +1,36 @@
+:root{
+  --bg:#f6f9ff;
+  --card:#ffffff;
+  --primary:#1e90ff;
+  --accent:#0b63d6;
+  --danger:#ff4d4f;
+  --text:#222;
+  --muted:#666;
+  --shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,Segoe UI,Roboto,Arial;
+  background:var(--bg); color:var(--text); padding:24px;
+}
+.container{max-width:900px; margin:20px auto}
+.screen{padding:20px}
+.hidden{display:none}
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:var(--shadow); max-width:420px}
+h1,h2{margin:8px 0 16px}
+label{display:block; margin-top:12px; font-weight:600}
+input{width:100%; padding:10px; margin-top:6px; border-radius:8px; border:1px solid #ddd}
+button{padding:10px 16px; border-radius:8px; border:0; cursor:pointer}
+button.nav{background:var(--primary); color:white}
+button.danger{background:var(--danger); color:white}
+footer{display:flex; gap:8px; margin-top:18px}
+#timer{float:right; font-weight:700}
+.hint{color:var(--muted); margin-top:12px}
+.message{color:var(--danger); margin-top:10px}
+.question-card{background:var(--card); padding:16px; margin:12px 0; border-radius:10px; box-shadow:var(--shadow)}
+.option{display:block; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #eee; cursor:pointer}
+.option.selected{border-color:var(--accent); background:linear-gradient(90deg, rgba(14,105,255,0.06), rgba(14,105,255,0.02))}
+.correct{border:2px solid #28a745}
+.wrong{border:2px solid #ff4d4f}
+.result-row{background:#fff; padding:12px; border-radius:8px; margin:8px 0}
+small.muted{color:var(--muted)}
