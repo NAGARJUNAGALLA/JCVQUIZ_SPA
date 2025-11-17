@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JCV Quiz — SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <!-- Login Screen -->
+    <section id="login-screen" class="screen">
+      <h1>JCV Quiz Login</h1>
+      <div class="card">
+        <label>Username</label>
+        <input id="username" placeholder="JCV001" />
+        <label>Password</label>
+        <input id="password" type="password" placeholder="Your password" />
+        <button id="loginBtn">Login</button>
+        <p id="loginMessage" class="message"></p>
+      </div>
+      <p class="hint">Use sample users like JCV001 → Pass@01 (for testing)</p>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz-screen" class="screen hidden">
+      <header>
+        <h2 id="quiz-title">Quiz</h2>
+        <div id="timer">Time: <span id="time-remaining">00:00</span></div>
+      </header>
+
+      <main id="quiz-container">
+        <!-- Section and question rendered here -->
+      </main>
+
+      <footer>
+        <button id="prevBtn" class="nav">Previous</button>
+        <button id="nextBtn" class="nav">Next</button>
+        <button id="finishBtn" class="danger hidden">Finish</button>
+      </footer>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="result-screen" class="screen hidden">
+      <h2>Results</h2>
+      <div id="result-summary"></div>
+      <div id="result-details"></div>
+      <button id="logoutBtn">Logout</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
